@@ -1,0 +1,48 @@
+body {
+    margin-top: 50px;
+}
+
+.box {
+    width:200px;
+    height:200px;
+    border-color: black;
+    border: 5px solid white;
+    border-radius: 10px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#boxes {
+    display: flex;
+}
+
+#color-display {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+#color-input {
+    margin: 20px 0;
+    width: 50%;
+    border-color: black;
+}
+
+
+#color-input:focus {
+   background-color: aqua;
+   color:brown
+}
+
+
+
+.center{
+    text-align: center;
+
+    margin: auto;
+    width: 50%;
+    /* background-color: aqua; */
+    border-color: black;
+}
