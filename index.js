@@ -33,8 +33,11 @@ function keyInput (e) {
     if (e.key === 'Enter') {
         for (let color of colors) {
             const singleBox = document.querySelector(`.${color}`);
-            if (this.value === color) {
-                document.querySelector(`.${this.value}`).style.borderColor = 'black';
+            word = this.value.toLowerCase();
+            console.log(word);
+
+            if (word === color) {
+                document.querySelector(`.${word}`).style.borderColor = 'black';
                 colorDisplay.style.color = 'black';
                 colorDisplay.innerHTML = 'Correct!';
                 singleBox.style.backgroundColor = 'white';
@@ -43,7 +46,6 @@ function keyInput (e) {
                 let response = document.createElement('li');
                 response.innerText = color.charAt(0).toUpperCase() + color.slice(1);;
                 response.style.color = color;
-                console.log(response);
                 list.insertBefore(response, list.children[0]);
                 setTimeout(function() {
                     colorDisplay.style.color = color;
